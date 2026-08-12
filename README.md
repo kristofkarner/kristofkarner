@@ -18,6 +18,23 @@ under Hungarian rules.
 **The rest** — PHP, WordPress, custom backends, and the maintenance that keeps
 all of it running.
 
+## Code
+
+Working references for problems I could not find a decent write-up of
+anywhere. Each one is self-contained, and each has a test that runs without a
+network.
+
+- **[stripe-szamlazz-hu](https://github.com/kristofkarner/stripe-szamlazz-hu)**
+  — a Hungarian fiscal invoice issued from a Stripe webhook. The order of
+  operations is the point: verify the signature, reserve the event, then issue.
+- **[telegram-subscription-access](https://github.com/kristofkarner/telegram-subscription-access)**
+  — paid access to a private Telegram group: single-use invites, pairing a
+  payment with a Telegram account, and removal that still lets the member
+  return.
+- **[dmarc-report-reader](https://github.com/kristofkarner/dmarc-report-reader)**
+  — reads DMARC aggregate reports and shows which senders would break under a
+  stricter policy, telling misalignment apart from real authentication failure.
+
 ## Writing
 
 I publish what I learn while building. These are the practical ones, mostly in
