@@ -9,14 +9,24 @@ in Hungarian and English.
 
 ## What I work with
 
-**Payments and subscriptions** — Stripe Checkout and Billing, webhook-driven
-state changes, idempotent event handling.
-**Access control** — Telegram Bot API: single-use invite links, subscription
-lifecycle, expiry and re-entry.
-**Invoicing** — Számlázz.hu Agent API, including the parts that only matter
-under Hungarian rules.
-**The rest** — PHP, WordPress, custom backends, and the maintenance that keeps
-all of it running.
+- **Payments and subscriptions** — Stripe Checkout and Billing, webhook-driven
+  state changes, idempotent event handling.
+- **Access control** — Telegram Bot API: single-use invite links, subscription
+  lifecycle, expiry and re-entry.
+- **Invoicing** — Számlázz.hu Agent API, including the parts that only matter
+  under Hungarian rules.
+- **Monitoring** — a daily check of the sites I maintain. That code stays
+  private: it describes client systems.
+- **The rest** — PHP, Python, JavaScript, plain HTML and CSS; WordPress where
+  the client edits the content; and the maintenance that keeps all of it
+  running.
+
+## How I work
+
+With AI, every day: Claude Code, and Cursor where it fits better. First I
+write down what the system has to do; the code follows that, and a machine
+checks the result before it goes live. The decisions and the responsibility
+stay with me.
 
 ## Code
 
@@ -37,23 +47,34 @@ network.
 
 ## Writing
 
-I publish what I learn while building. These are the practical ones, mostly in
-Hungarian — the areas where I could not find a decent local write-up:
+I publish what I learn while building, in Hungarian and English. The ones next
+to the code above:
 
 - [Stripe subscriptions and automated invoicing](https://kristofkarner.com/en/writing/stripe-automated-invoicing/)
   — webhooks, currency, refunds, and why the same event arriving twice matters
 - [Paid Telegram access](https://kristofkarner.com/en/writing/paid-telegram-access/)
   — invites, identifying the payer, expiry, and what the Bot API cannot do
-- [Telegram Stars or a custom system?](https://kristofkarner.com/en/writing/telegram-stars-or-custom-system/)
-  — when the built-in subscription is enough, and when it is not
 - [Email authentication: SPF, DKIM, DMARC](https://kristofkarner.com/en/writing/email-authentication-spf-dkim-dmarc/)
   — why business mail lands in spam, and how the three records fit together
 
-All of it: [kristofkarner.com](https://kristofkarner.com)
+And from the workshop, on how the work itself is done:
+
+- [Why there is no build step on this site](https://kristofkarner.com/en/workshop/why-there-is-no-build-step/)
+  — plain HTML, zero dependencies, and when that is the wrong call
+- [I fingerprint every file after a deploy](https://kristofkarner.com/en/workshop/file-fingerprints/)
+  — whether anything on the server differs from what was uploaded, and where
+  the check is blind
+- [Four WP-CLI deploy traps that fail silently](https://kristofkarner.com/en/workshop/wp-cli-deploy-traps/)
+  — escaped URLs, permissions carried through tar, an empty database export,
+  a collation clash
+- [How the agents got into Hugging Face](https://kristofkarner.com/en/workshop/how-the-agents-got-into-hugging-face/)
+  — the chain step by step, and what applies from it to a website
+
+All of it: [kristofkarner.com](https://kristofkarner.com/en/)
 
 ## Contact
 
-kristof@kristofkarner.com
+kristof@kristofkarner.com · [LinkedIn](https://www.linkedin.com/in/kristofkarner/)
 
-I don't cold-contact anyone, and I don't work from template quotes. Describe
-what you want to solve, and you get a price for that job.
+I don't work from template quotes. Describe what you want to solve, and you get
+a price for that job.
